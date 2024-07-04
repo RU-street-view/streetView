@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta char=set="UTF-8">
+  <head>
+    <meta chaset="UTF-8" />
     <title>Ryukoku Online Open Campus</title>
-    <link rel="icon" href="image/logos/street_ryu.png">
+    <link rel="icon" href="image/logos/street_ryu.png" />
     <link rel="stylesheet" href="pannellum/pannellum.css" />
-    <link rel="stylesheet" href="map-style.css">
+    <link rel="stylesheet" href="map-style.css" />
     <script src="pannellum/pannellum.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="panorama"></div>
     <div class="menu">
-        <img src="image/logos/menu-icon.png" alt="Menu" onclick="toggleMenu()">
-        <div class="menu-content" id="menuContent">
-            <div class="close-btn" onclick="toggleMenu()">
-                <img src="image/logos/menu-icon.png" alt="Close">
-            </div>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="admin.html">管理者用</a> 
+      <img src="image/logos/menu-icon.png" alt="Menu" onclick="toggleMenu()" />
+      <div class="menu-content" id="menuContent">
+        <div class="close-btn" onclick="toggleMenu()">
+          <img src="image/logos/menu-icon.png" alt="Close" />
         </div>
-    </div>    
-    <div class="menu-bar">
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
+        <a href="admin.html">管理者用</a>
+      </div>
     </div>
-    <script src="map-script.js"></script>
-</body>
+    <div class="menu-bar">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    <img
+      id="arrowButtonImg"
+      src="image/arrow.png"
+      alt="矢印"
+      style="
+        transform: scale(0.439421) rotate(0deg);
+        display: block;
+        left: 260px;
+        top: 386px;
+        transform-origin: center center;
+      "
+    />
 
+    <script src="map-script.js"></script>
+  </body>
 </html>
